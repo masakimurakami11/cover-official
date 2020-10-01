@@ -1,0 +1,45 @@
+.header
+  .icon-space-left
+    = fa_icon 'bars', class: 'select-icon-1 fa-4x'
+  .header-logo-space
+    = image_tag("/thecoveroriginal-logo01.png", class: 'header-logo')
+  .icon-space-right
+    = link_to 'https://www.instagram.com/elepaint_gallery/', class: 'select-icon-2' do
+      = fa_icon 'envelope', class: 'fa-4x'
+.select-bar-space
+  = link_to 'HOME', root_path, class: 'select-bar-1'
+  = link_to 'ABOUT', about_views_path, class: 'select-bar-1'
+  = link_to 'NEWS', news_1_views_path, class: 'select-bar-1'
+  = link_to 'お問い合わせ', question_views_path, class: 'select-bar-1'
+.products-space
+  .products-image-space
+    = image_tag("/SNY05557.JPG", class: 'products-image-1')
+    = image_tag("/SNY05529.JPG", class: 'products-image-2')
+    = image_tag("/SNY05507.JPG", class: 'products-image-3')
+    = image_tag("/SNY05559.JPG", class: 'products-image-4')
+  .products-image-mini-space
+    = image_tag("/SNY05557.JPG", class: 'products-image-mini-1')
+    = image_tag("/SNY05529.JPG", class: 'products-image-mini-2')
+    = image_tag("/SNY05507.JPG", class: 'products-image-mini-3')
+    = image_tag("/SNY05559.JPG", class: 'products-image-mini-4')
+  .products-name-space
+    %p.products-name Stay home girl Parker
+  .products-price-space
+    %p.products-price ¥ 9,800 yen
+  .products-description-space
+    %p.products-description 背中中央部分に自粛中の女の子をイメージした<br>デザインが施せれたパーカー。<br>生地は裏起毛で15.6ozと厚みのあるものを採用し、<br>真冬も過ごせるほどタフで上質なのが<br>特徴となっている。
+  .products-size-space
+    = image_tag("/IMG_0057.jpg", class: 'products-size-image') 
+  = link_to '購入予約へ', 'https://www.instagram.com/elepaint_gallery/', class: 'products-dm-button'
+  .products-other-space
+    = link_to product_1_views_path, class: 'product-space-1' do
+      = image_tag("/SNY05573.JPG", class: 'product-image-1')
+      .tag-space
+        %p.product-name-1 Sexy girl Long tee
+        %p.product-price-1 ¥5,800 (+tax)
+    = link_to product_2_views_path, class: 'product-space-1' do
+      = image_tag("/SNY05617.JPG", class: 'product-image-1')
+      .tag-space
+        %p.product-name-1 Stay home girl Trainer
+        %p.product-price-1 ¥7,800 (+tax)
+= javascript_include_tag 'views.js'

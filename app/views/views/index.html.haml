@@ -1,0 +1,74 @@
+.header
+  .icon-space-left
+    = fa_icon 'bars', class: 'select-icon-1 fa-4x'
+  .header-logo-space
+    = image_tag("/thecoveroriginal-logo01.png", class: 'header-logo')
+  .icon-space-right
+    = link_to 'https://www.instagram.com/elepaint_gallery/', class: 'select-icon-2' do
+      = fa_icon 'envelope', class: 'fa-4x'
+.select-bar-space
+  = link_to 'HOME', root_path, class: 'select-bar-1'
+  = link_to 'ABOUT', about_views_path, class: 'select-bar-1'
+  = link_to 'NEWS', news_1_views_path, class: 'select-bar-1'
+  = link_to 'お問い合わせ', question_views_path, class: 'select-bar-1'
+.flash
+  %p.flash-message ¥10,000以上ご購入で送料無料
+.top-space
+  = image_tag("/SNY05507.JPG", class: 'top-image-1')
+  = image_tag("/SNY05603.JPG", class: 'top-image-2')
+  = image_tag("/SNY05623.JPG", class: 'top-image-3')
+.circle-space
+  = fa_icon 'circle', class: 'select-icon-5 fa-2x'
+  = fa_icon 'circle', class: 'select-icon-6 fa-2x'
+  = fa_icon 'circle', class: 'select-icon-7 fa-2x'
+.message-space
+  %p.message-title MESSAGE
+  %p.message Who are you? What do you live for ?
+  %p.message Let's take off the cover that was affected by the surroundings.
+  %p.message Find your answer and put on a new cover.
+  %p.message I keep drawing The Cover Original in the hope
+  %p.message that one of then will change your life a little.
+.news-space
+  %p.news-title NEWS
+  = link_to news_1_views_path, class: 'news-space-1' do
+    %p.news-title-1 THE COVER ORIGINAL open canpaine
+  = link_to news_2_views_path, class: 'news-space-2' do
+    %p.news-title-2 First Presents 10/10(SAT) 20:00 start
+.product-space
+  %p.products-title PRODUCTS
+  = link_to product_1_views_path, class: 'product-space-1' do
+    = image_tag("/SNY05573.JPG", class: 'product-image-1')
+    -# .sold-out-space
+    -#   %p.sold-out-name SOLD OUT
+    .tag-space
+      %p.product-name-1 Sexy girl Long tee
+      %p.product-price-1 ¥5,800 (+tax)
+  = link_to product_2_views_path, class: 'product-space-1' do
+    = image_tag("/SNY05617.JPG", class: 'product-image-1')
+    .tag-space
+      %p.product-name-1 Stay home girl Trainer
+      %p.product-price-1 ¥7,800 (+tax)
+  = link_to product_3_views_path, class: 'product-space-1' do
+    = image_tag("/SNY05557.JPG", class: 'product-image-1')
+    .tag-space
+      %p.product-name-1 Stay home girl Parker
+      %p.product-price-1 ¥9,800 (+tax)
+  -# = link_to news_views_path, class: 'product-space-1' do
+  -#   = image_tag("/top-image-3.jpeg", class: 'product-image-1')
+  -#   .tag-space
+  -#     %p.product-name-1 Backprint T-shirts
+  -#     %p.product-price-1 ¥6,000 (+tax)
+  -# = link_to news_views_path, class: 'product-space-1' do
+  -#   = image_tag("/top-image-3.jpeg", class: 'product-image-1')
+  -#   .tag-space
+  -#     %p.product-name-1 Backprint T-shirts
+  -#     %p.product-price-1 ¥6,000 (+tax)
+  -# = link_to news_views_path, class: 'product-space-1' do
+  -#   = image_tag("/top-image-2.jpeg", class: 'product-image-1')
+  -#   .tag-space
+  -#     %p.product-name-1 Backprint T-shirts
+  -#     %p.product-price-1 ¥6,000 (+tax)
+-# .creater-space
+-# .question-space
+
+= javascript_include_tag 'views.js'

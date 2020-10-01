@@ -1,0 +1,28 @@
+.header
+  .icon-space-left
+    = fa_icon 'bars', class: 'select-icon-1 fa-4x'
+  .header-logo-space
+    = image_tag("/thecoveroriginal-logo01.png", class: 'header-logo')
+  .icon-space-right
+    = link_to 'https://www.instagram.com/elepaint_gallery/', class: 'select-icon-2' do
+      = fa_icon 'envelope', class: 'fa-4x'
+.select-bar-space
+  = link_to 'HOME', root_path, class: 'select-bar-1'
+  = link_to 'ABOUT', about_views_path, class: 'select-bar-1'
+  = link_to 'NEWS', news_1_views_path, class: 'select-bar-1'
+  = link_to 'お問い合わせ', about_views_path, class: 'select-bar-1'
+
+.question-space
+  %p.question-title お問い合わせについて
+  %p.question-description-1 公式アカウントのDM（ダイレクトメッセージ）にてお問い合わせ内容をお送りください。
+  %p.question-description-1 （下記アイコンをクリックすると公式アカウントに繋がります。）
+  -# = fa_icon 'facebook-square', class: 'facebook-icon fa-5x'
+  -# %p.facebook-description Facebook公式アカウント　The_Cover_Original_Official
+  = link_to 'https://www.instagram.com/elepaint_gallery/' do
+    = fa_icon 'instagram', class: 'instagram-icon fa-5x'
+  %p.instagram-description Instagram公式アカウント　elepaint_gallery
+  %p.question-description-2 早めの対応心掛けておりますが、
+  %p.question-description-3 お問い合わせを多数頂いた場合、対応が遅れる場合がございます。
+  %p.question-description-4 ご了承のほどよろしくお願い致します。
+  
+= javascript_include_tag 'views.js'
